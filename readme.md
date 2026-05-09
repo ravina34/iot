@@ -1,0 +1,1 @@
+create iot web application details: tech stack: html, tailwind css, express, node js, simple db and sqlite  code level:beginer
