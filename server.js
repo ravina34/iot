@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 const bodyParser = require('body-parser')
 const session = require('express-session')
@@ -14,7 +15,7 @@ app.use(bodyParser.json())
 app.use(express.static('public'))
 
 app.use(session({
-  secret: 'sistec',
+  secret: process.env.SESSION_SECRET,
   resave: false,
   saveUninitialized: true
 }))
